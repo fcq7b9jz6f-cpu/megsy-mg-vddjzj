@@ -1,0 +1,1 @@
+const shirt=document.querySelector('.shirt');function update(){const max=Math.max(1,document.documentElement.scrollHeight-innerHeight);const p=scrollY/max;shirt?.style.setProperty('--rot',(p*360+18)+'deg')}addEventListener('scroll',update,{passive:true});update();
